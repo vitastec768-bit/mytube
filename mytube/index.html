@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Мій Ютуб</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">МІЙЮТУБ</div>
+    <input id="searchInput" type="text" placeholder="Пошук відео...">
+    <button id="uploadBtn">Завантажити</button>
+  </header>
+
+  <div id="uploadForm" class="upload-form hidden">
+    <h2>Завантажити відео</h2>
+    <input id="titleInput" type="text" placeholder="Назва відео">
+    <input id="channelInput" type="text" placeholder="Назва каналу">
+    <input id="thumbInput" type="file" accept="image/*">
+    <input id="videoInput" type="file" accept="video/*">
+    <button id="saveVideo">Опублікувати</button>
+  </div>
+
+  <main>
+    <div id="videoList" class="video-list"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

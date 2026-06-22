@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #0f0f0f;
+  color: #fff;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 16px;
+  background: #202020;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #ff4444;
+}
+
+#searchInput {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: none;
+  outline: none;
+  background: #121212;
+  color: #fff;
+}
+
+#uploadBtn {
+  padding: 8px 14px;
+  background: #ff4444;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.upload-form {
+  background: #181818;
+  padding: 20px;
+  margin: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upload-form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #121212;
+  color: #fff;
+}
+
+.upload-form button {
+  padding: 10px;
+  background: #ff4444;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.video-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  padding: 16px;
+}
+
+.video-card {
+  background: #181818;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.6);
+}
+
+.thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #333;
+}
+
+.video-info {
+  padding: 8px 10px 10px;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.video-channel {
+  font-size: 12px;
+  color: #aaa;
+}
