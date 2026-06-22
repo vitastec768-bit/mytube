@@ -2,29 +2,39 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <title>Мій Ютуб</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>МІЙЮТУБ</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 <body>
 
+  <!-- Верхня панель -->
   <header class="topbar">
     <div class="logo">МІЙЮТУБ</div>
     <input id="searchInput" type="text" placeholder="Пошук відео...">
     <button id="uploadBtn">Завантажити</button>
   </header>
 
-  <div id="uploadForm" class="upload-form hidden">
+  <!-- Форма завантаження -->
+  <section id="uploadForm" class="upload-form hidden">
     <h2>Завантажити відео</h2>
     <input id="titleInput" type="text" placeholder="Назва відео">
     <input id="channelInput" type="text" placeholder="Назва каналу">
     <input id="thumbInput" type="file" accept="image/*">
     <input id="videoInput" type="file" accept="video/*">
     <button id="saveVideo">Опублікувати</button>
-  </div>
+  </section>
 
+  <!-- Список відео -->
   <main>
     <div id="videoList" class="video-list"></div>
   </main>
+
+  <!-- Нижній футер -->
+  <footer style="text-align:center; padding:20px; color:#888;">
+    © 2026 МІЙЮТУБ — аналог YouTube, створено Віктором
+  </footer>
 
   <script src="script.js"></script>
 </body>
